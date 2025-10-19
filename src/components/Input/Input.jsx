@@ -9,7 +9,7 @@ const Input = ({ type = 'text', placeholder, value, onChange }) => {
     padding: `${spacing['2']} ${spacing['3']}`, // 例: '8px 12px'
     fontSize: fontSizes.base,
     border: `1px solid ${colors.neutral.gray300}`,
-    borderRadius: '4px', // トークン化を検討 (例: borderRadii.sm)
+    borderRadius: borderRadii.sm, // トークン化を検討 (例: borderRadii.sm)
     width: '100%', // 親要素に合わせる
     boxSizing: 'border-box', // paddingを含めてwidth 100%にする
   };
