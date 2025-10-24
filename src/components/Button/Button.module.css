@@ -1,0 +1,50 @@
+/* src/components/Button/Button.module.css */
+.base { /* 共通スタイル */
+    font-weight: 500; /* fontWeight.medium */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    outline: none;
+    width: auto;
+    white-space: nowrap;
+    border: none;
+  }
+  
+  /* バリアント */
+  .primary {
+    background-color: var(--color-primary-blue, #007aff); /* CSS変数 (なければデフォルト値) */
+    color: var(--color-neutral-white, #FFFFFF);
+  }
+  .primary:hover {
+    background-color: var(--color-primary-darkBlue, #0056b3);
+  }
+  .secondary {
+    background-color: var(--color-neutral-gray100, #F3F4F6);
+    color: var(--color-neutral-gray700, #495057);
+    border: 1px solid var(--color-neutral-gray300, #DEE2E6);
+  }
+  .secondary:hover {
+    background-color: var(--color-neutral-gray300, #DEE2E6);
+  }
+  
+  /* サイズ */
+  .sm {
+    padding: 4px 8px; /* spacing['1'] spacing['2'] */
+    font-size: 14px; /* fontSizes.sm */
+    border-radius: 4px; /* borderRadii.sm */
+  }
+  .md {
+    padding: 8px 12px; /* spacing['2'] spacing['3'] */
+    font-size: 16px; /* fontSizes.base */
+    border-radius: 8px; /* borderRadii.md */
+  }
+  .lg {
+    padding: 12px 16px; /* spacing['3'] spacing['4'] */
+    font-size: 18px; /* fontSizes.lg */
+    border-radius: 12px; /* borderRadii.lg */
+  }
+  
+  /* disabled状態 */
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,16 @@
+/* src/styles/tokens.css */
+:root {
+    /* Colors */
+    --color-primary-blue: #007aff;
+    --color-primary-darkBlue: #0056b3;
+    --color-primary-lightBlue: #66a3ff;
+    --color-secondary-green: #28a745;
+    --color-secondary-darkGreen: #1e7e34;
+    --color-neutral-black: #000000;
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-gray100: #F3F4F6;
+    --color-neutral-gray300: #D1D5DB;
+    --color-neutral-gray500: #6B7280;
+    --color-neutral-gray700: #495057;
+    /* 他のトークン（spacing, fontSizes, borderRadiiなど）も必要に応じてここに追加できます */
+  }
