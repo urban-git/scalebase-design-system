@@ -1,34 +1,29 @@
 // src/components/Input/Input.jsx
 import React from 'react';
-// デザイントークンをインポート
-import { colors, fontSizes, spacing, borderRadii } from '../../tokens'; // borderRadiiを仮定（後で追加）
+import { Primitive } from '@radix-ui/react-primitive'; // Primitiveをインポート
+import styles from './Input.module.css'; // CSS Modulesをインポート
 
-const Input = ({ type = 'text', placeholder, value, onChange }) => {
-  // トークンを使ってスタイルを定義
-  const inputStyle = {
-    padding: `${spacing['2']} ${spacing['3']}`, // 例: '8px 12px'
-    fontSize: fontSizes.base,
-    border: `1px solid ${colors.neutral.gray300}`,
-    borderRadius: borderRadii.sm, // トークン化を検討 (例: borderRadii.sm)
-    width: '100%', // 親要素に合わせる
-    boxSizing: 'border-box', // paddingを含めてwidth 100%にする
-  };
-
-  // フォーカス時のスタイル（例）
-  // const focusStyle = {
-  //   outline: 'none',
-  //   borderColor: colors.primary.blue,
-  //   boxShadow: `0 0 0 2px ${colors.primary.lightBlue}`, // フォーカスリング
-  // };
-  // (注: focusスタイルはCSS ModulesやStyled Componentsの方が管理しやすいです)
+const Input = ({
+  type = 'text',
+  placeholder,
+  value,
+  onChange,
+  disabled = false,
+  ...props
+}) => {
+  // CSS Modulesのクラス名を適用
+  const className = `${styles.input} ${disabled ? styles.disabled : ''}`; // disabledクラスも追加
 
   return (
-    <input
+    // <input>の代わりにPrimitive.inputを使用
+    <Primitive.input
       type={type}
-      style={inputStyle}
+      className={className}
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      disabled={disabled}
+      {...props} // 残りのpropsを渡す
     />
   );
 };
