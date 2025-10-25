@@ -1,16 +1,67 @@
 /* src/styles/tokens.css */
 :root {
-    /* Colors */
-    --color-primary-blue: #007aff;
-    --color-primary-darkBlue: #0056b3;
-    --color-primary-lightBlue: #66a3ff;
-    --color-secondary-green: #28a745;
-    --color-secondary-darkGreen: #1e7e34;
-    --color-neutral-black: #000000;
-    --color-neutral-white: #FFFFFF;
-    --color-neutral-gray100: #F3F4F6;
-    --color-neutral-gray300: #D1D5DB;
-    --color-neutral-gray500: #6B7280;
-    --color-neutral-gray700: #495057;
-    /* 他のトークン（spacing, fontSizes, borderRadiiなど）も必要に応じてここに追加できます */
-  }
+  /* === Colors === */
+  /* Primary */
+  --color-primary-blue: #007aff;
+  --color-primary-darkBlue: #0056b3;
+  --color-primary-lightBlue: #66a3ff;
+  /* Secondary */
+  --color-secondary-green: #28a745;
+  --color-secondary-darkGreen: #1e7e34;
+  /* Neutral */
+  --color-neutral-black: #000000;
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-gray100: #F3F4F6;
+  --color-neutral-gray300: #D1D5DB;
+  --color-neutral-gray500: #6B7280;
+  --color-neutral-gray700: #495057;
+  /* Status */
+  --color-status-success: #28a745;
+  --color-status-warning: #ffc107;
+  --color-status-error: #dc3545;
+
+  /* === Spacing === */
+  --spacing-0: 0px;
+  --spacing-px: 1px;
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+
+  /* === Font Sizes === */
+  /* fontSizes from typography.js */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+
+  /* === Font Weights === */
+  /* fontWeights from typography.js */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* === Line Heights === */
+  /* lineHeights from typography.js */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-loose: 2;
+
+  /* === Border Radii === */
+  /* borderRadii from border-radii.js */
+  --border-radius-none: 0;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+}
